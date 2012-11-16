@@ -1,0 +1,2 @@
+cp /var/www/html/datasources/mySQL/ISSUES/load/issuesLATEST.txt /tmp/mysql/issuesGOODtoLOAD.txt
+cp /var/www/html/datasources/mySQL/ISSUES/load/issuesLATEST.txt /var/www/html/datasources/mySQL/ISSUES/load/old/issuesLATEST.txt
