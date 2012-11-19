@@ -27,17 +27,17 @@ BEFORE using this file
         '[last issue yyyy-mm-dd]'
     );
     put them in a SQL file if there are more than a few ranges.
-    /var/www/html/mySQL/ISSUES/batch/[issue_id].sql
+    /var/www/html/iconDate/batch/[issue_id].sql
         so like:
-    /var/www/html/mySQL/ISSUES/batch/2012May24.sql
+    /var/www/html/iconDate/batch/2012May24.sql
 ******************************************
 8) run the new statements
     8A) from MySQL Workbench or
     8B) from mysql console as
-            mysqld> source /var/www/html/mySQL/ISSUES/batch/[issue_id].sql
+            mysqld> source /var/www/html/iconDate/batch/[issue_id].sql
 ******************************************
 
-AMENDMENTS IN THIS SECTION TO ACCOMODATE STUDENT WORK VIA http://192.168.1.195/iconDate/index.php?issue_id=[id]
+AMENDMENTS IN THIS SECTION TO ACCOMODATE STUDENT WORK VIA http://192.168.1.142/iconDate/index.php?issue_id=[id]
 
 9) MARK THE EXISTING ISSUES AS HAVING HAD THEIR CHILDREN CREATED
 	(new fields exist to hold this)
@@ -61,7 +61,7 @@ AMENDMENTS IN THIS SECTION TO ACCOMODATE STUDENT WORK VIA http://192.168.1.195/i
 
 10) newIssues-LOAD.sql continues
     LOAD the new records into issues table
-        LOAD DATA LOCAL INFILE '/var/www/html/datasources/mySQL/ISSUES/issuesLOAD[dateTime].txt'
+        LOAD DATA LOCAL INFILE '/var/www/html/iconDate/issuesLOAD[dateTime].txt'
         INTO TABLE issues
         FIELDS TERMINATED BY '|' LINES TERMINATED BY '\n';
 

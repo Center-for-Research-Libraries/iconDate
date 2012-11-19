@@ -143,7 +143,6 @@ CREATE PROCEDURE createNewIssue(
         END IF;
 
 
-
         SELECT freq_id_code INTO myFreqID FROM publications
             WHERE pub_id IN (
                 SELECT pub_id FROM issuesBUFFER WHERE issue_id = input_issue_id
